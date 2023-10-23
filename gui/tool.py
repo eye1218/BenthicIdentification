@@ -18,8 +18,8 @@ def get_all_image(path: str) -> tuple:
     """
 
     def is_image(item):
-        return Path(item).suffix in ['.jpg', '.png', '.jpeg', '.bmp', '.tif', '.tiff', 'JPG', 'PNG', 'JPEG', 'BMP',
-                                     'TIF', 'TIFF']
+        return Path(item).suffix in ['.jpg', '.png', '.jpeg', '.bmp', '.tif', '.tiff', '.JPG', '.PNG', '.JPEG', '.BMP',
+                                     '.TIF', '.TIFF']
 
     return tuple(filter(is_image, get_all_file([path])))
 
